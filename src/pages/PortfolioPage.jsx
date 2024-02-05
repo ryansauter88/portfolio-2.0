@@ -1,7 +1,9 @@
+// TODO: insert cards, make sure they fit nice
+
 function PortfolioPage() {
     return (
         <>
-            <h1>PortfolioPage test</h1>
+            <h1>Portfolio</h1>
         </>
     );
 }

@@ -1,13 +1,9 @@
 export default function Navbar({ links }) {
     return (
-        <nav className="">
-            <div className="">
-                <div className="">
-                    <ul className="">
-                        {links.map((link) => link)}
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div className="nav-container">
+            <ul className="nav-list">
+                {links.map((link) => link)}
+            </ul>
+        </div>
     );
 }

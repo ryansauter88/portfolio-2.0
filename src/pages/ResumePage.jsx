@@ -1,7 +1,9 @@
+// TODO: add clickable link to download resume (look up how to make download links??)
+
 function ResumePage() {
     return (
         <>
-            <h1>ResumePage test</h1>
+            <h1>Resume</h1>
         </>
     );
 }
