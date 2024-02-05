@@ -3,7 +3,11 @@
 function Header() {
     return (
         <>
-            <h1 className="webpage-title">Ryan Sauter</h1>
+            <img className="head-img" src="./src/assets/RecentPhoto.jpg"/>
+            <div className="head-container">
+                <h1>Ryan Sauter</h1>
+                <p>Agile fullstack developer.</p>
+            </div>
         </>
     );
 }

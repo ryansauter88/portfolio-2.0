@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-        <header>
+        <header className='header-container'>
             <Header />
         </header>
         <nav>

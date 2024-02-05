@@ -1,10 +1,16 @@
 * {
     /* border: 1px solid red; */
     margin: 0;
+    text-wrap: wrap;
+    overflow: hidden;
 }
 
 body {
     background-color: darkslategray;
+}
+
+.header-container {
+    max-height: 500px;
 }
 
 a {
@@ -14,18 +20,31 @@ a {
 
 main {
     background-color: blue;
-    margin: 0 10px;
-    padding: 25px 5px;
+    margin: 0 10.5%;
+    padding: 40px 10%;
 }
 
 footer {
     background-color: rebeccapurple;
-    margin: 0 10px;
+    margin: 0;
     padding: 25px;
 }
 
 .webpage-title {
     text-align: center;
+}
+
+.head-img {
+    width: 100%;
+    height: auto;
+}
+
+.head-container {
+    /* background-image: url('./assets/RecentPhoto.jpg'); */
+    /* padding: 10%; */
+    position: absolute;
+    top: 15%;
+    left: 30%
 }
 
 .nav-container {
@@ -37,13 +56,16 @@ footer {
 .nav-list {
     display: flex;
     justify-content: space-around;
-    width: 75%;
+    width: 80%;
+    background-color: rgb(92, 38, 0);
+    padding: 0;
 }
 
 .nav-link {
     text-decoration: none;
     margin: 0 10px;
     background-color: rgb(92, 38, 0);
+    padding: 5%;
 }
 
 
@@ -56,6 +78,16 @@ footer {
 @media screen and (max-width: 600px) {
     ul {
         padding: 0;
+    }
+    .head-container{
+        top: 5%;
+        left: 20%
+    }
+    main {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
     }
     .nav-list {
         flex-wrap: wrap;
