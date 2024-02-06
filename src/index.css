@@ -141,11 +141,10 @@ footer {
     font-size: 1.3em;
 }
 
-#contact-email {
+.contact-text {
     width: 20%;
     margin: 20px 0;
     font-size: 1.3em;
-
 }
 
 #contact-message {
@@ -196,7 +195,7 @@ button {
     .proficiencies-container {
         flex-direction: column;
     }
-    #contact-email {
+    .contact-text {
         width: 70%;
     }
     #contact-message {

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 function ContactPage() {
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
@@ -12,6 +13,22 @@ function ContactPage() {
         return re.test(String(email).toLowerCase());
     }
 
+    const handleHoverOff = (e) => {
+        e.preventDefault();
+        if (e.target.value === '') {
+            setErrorMessage('This field is required')
+            return;
+        } else {
+            setErrorMessage('');
+        }
+        // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+        if (!validateEmail(email)) {
+            setConfirmMessage('');
+          setErrorMessage('Email is invalid.');
+          // We want to exit out of this code block if something is wrong so that the user can correct it
+          return;
+        }
+    }
     const handleInputChange = (e) => {
         // Getting the value and name of the input which triggered the change
         const { target } = e;
@@ -25,6 +42,8 @@ function ContactPage() {
             setEmail(inputValue);
         } else if (inputType === 'message') {
             setMessage(inputValue);
+        } else {
+            setName(inputValue)
         }
     };
     
@@ -32,20 +51,17 @@ function ContactPage() {
         // Preventing the default behavior of the form submit (which is to refresh the page)
         e.preventDefault();
     
-        // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-        if (!validateEmail(email)) {
+        if (name == '') {
             setConfirmMessage('');
-          setErrorMessage('Email is invalid.');
-          // We want to exit out of this code block if something is wrong so that the user can correct it
+          setErrorMessage(`Please fill out your name.`);
           return;
-          // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
         }
         if (message == '') {
             setConfirmMessage('');
-          setErrorMessage(`Please enter your message before sending.`);
+          setErrorMessage(`Please fill in the message you'd like to send.`);
           return;
         }
-    
+
         // If successful, we want to clear out the input after registration.
         setMessage('');
         setEmail('');
@@ -59,7 +75,17 @@ function ContactPage() {
             <h1>Contact</h1>
             <form className="form" onSubmit={handleFormSubmit}>
                 <input
-                    id='contact-email'
+                    onMouseLeave={handleHoverOff}
+                    className='contact-text'
+                    value={name}
+                    name="name"
+                    onChange={handleInputChange}
+                    type="text"
+                    placeholder="name"
+                />
+                <input
+                    onMouseLeave={handleHoverOff}
+                    className='contact-text'
                     value={email}
                     name="email"
                     onChange={handleInputChange}
@@ -67,6 +93,7 @@ function ContactPage() {
                     placeholder="email"
                 />
                 <textarea
+                    onMouseLeave={handleHoverOff}
                     id='contact-message'
                     value={message}
                     name="message"
