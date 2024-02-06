@@ -1,9 +1,94 @@
+import { useState } from 'react';
+
 function ContactPage() {
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
+    const [confirmMessage, setConfirmMessage] = useState('');
+
+    
+    function validateEmail(email) {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+
+    const handleInputChange = (e) => {
+        // Getting the value and name of the input which triggered the change
+        const { target } = e;
+        const inputType = target.name;
+        const inputValue = target.value;
+    
+        // Based on the input type, we set the state of either email, username, and password
+        // TODO: Add an else statement to the end that will set the password to the value of 'inputValue'
+    
+        if (inputType === 'email') {
+            setEmail(inputValue);
+        } else if (inputType === 'message') {
+            setMessage(inputValue);
+        }
+    };
+    
+    const handleFormSubmit = (e) => {
+        // Preventing the default behavior of the form submit (which is to refresh the page)
+        e.preventDefault();
+    
+        // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+        if (!validateEmail(email)) {
+            setConfirmMessage('');
+          setErrorMessage('Email is invalid.');
+          // We want to exit out of this code block if something is wrong so that the user can correct it
+          return;
+          // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+        }
+        if (message == '') {
+            setConfirmMessage('');
+          setErrorMessage(`Please enter your message before sending.`);
+          return;
+        }
+    
+        // If successful, we want to clear out the input after registration.
+        setMessage('');
+        setEmail('');
+
+        // TODO: send an actual email using the form??
+        setErrorMessage('')
+        setConfirmMessage('Thanks for reaching out! I will respond back soon.')
+    }
     return (
         <>
             <h1>Contact</h1>
+            <form className="form" onSubmit={handleFormSubmit}>
+                <input
+                    id='contact-email'
+                    value={email}
+                    name="email"
+                    onChange={handleInputChange}
+                    type="email"
+                    placeholder="email"
+                />
+                <textarea
+                    id='contact-message'
+                    value={message}
+                    name="message"
+                    onChange={handleInputChange}
+                    type="text"
+                    placeholder="What would you like to send me?"
+                />
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+            {errorMessage && (
+            <div>
+                <p className="error-text">{errorMessage}</p>
+            </div>
+            )}
+            {confirmMessage && (
+            <div>
+                <p className="confirm-text">{confirmMessage}</p>
+            </div>
+            )}
         </>
     );
 }
-
 export default ContactPage

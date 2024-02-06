@@ -79,7 +79,7 @@ footer {
     color: white;
     position: absolute;
     top: 15%;
-    left: 30%;
+    left: 20%;
     background-color: rgb(0, 0, 0, 0.4);
     padding: 17px;
     border-radius: 10%;
@@ -106,7 +106,8 @@ footer {
 
 .nav-link {
     text-decoration: none;
-    margin: 0 10px;    
+    margin: 0 10px;
+    color: black;    
     background-color: #C2CAE8;
     padding: 3% 5%;
     border-radius: 10px;
@@ -134,6 +135,35 @@ footer {
     padding-top: 15px;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+}
+
+#contact-email {
+    width: 20%;
+    margin: 20px 0;
+    font-size: 1.3em;
+
+}
+
+#contact-message {
+    height: 15vh;
+    margin: 20px 0;
+    font-size: 1.3em;
+}
+
+button {
+    margin: 20px 0;
+    width: 20%;
+    font-size: 1.3em;
+}
+
+.error-text {
+    color: rgb(161, 31, 31);
+    font-size: 3em;
+}
 /* TODO: add hovering highlight in CSS project cards */
 
 @media screen and (max-width: 600px) {
@@ -142,7 +172,7 @@ footer {
     }
     .floating-container{
         top: 5%;
-        left: 12%
+        left: 8%
     }
     .floating-container h1 {
         font-size: 3em;
@@ -165,5 +195,14 @@ footer {
     }
     .proficiencies-container {
         flex-direction: column;
+    }
+    #contact-email {
+        width: 70%;
+    }
+    #contact-message {
+        height: 55vh;
+    }
+    button {
+        width: 50%
     }
 }
