@@ -4,9 +4,9 @@ function Header() {
     return (
         <>
             <img className="head-img" src="./src/assets/RecentPhoto2.jpg"/>
-            <div className="head-container">
+            <div className="floating-container">
                 <h1>Ryan Sauter</h1>
-                <p>Agile fullstack developer.</p>
+                <p>Agile full-stack developer.</p>
             </div>
         </>
     );

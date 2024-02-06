@@ -1,10 +1,8 @@
-// TODO: add clickable link to download resume (look up how to make download links??)
-
 function ResumePage() {
     return (
         <>
             <h1>Resume</h1>
-            <a>download my resume here!</a>
+            <a href=".\src\assets\RyanSauterResume.docx">download my resume here!</a>
             <div className="proficiencies-container">
                 <div className="proficiency-block">
                     <h3>Front-End Proficiencies</h3>

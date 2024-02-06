@@ -16,7 +16,7 @@
     font-size: 2.0em;
   }
   h5 {
-    font-size: 1.5em;
+    font-size: 1.35em;
   }
   h6 {
     font-size: 1em;
@@ -38,11 +38,10 @@ body {
 .header-container {
     overflow: hidden;
     max-height: 500px;
+    background-color: linear-gradient(to left top, black, rgb(0,0,0,0));
 }
 
 a {
-    text-decoration: none;
-    color: black;
     font-size: 2em;
 }
 
@@ -76,7 +75,7 @@ footer {
     height: auto;
 }
 
-.head-container {
+.floating-container {
     color: white;
     position: absolute;
     top: 15%;
@@ -84,6 +83,9 @@ footer {
     background-color: rgb(0, 0, 0, 0.4);
     padding: 17px;
     border-radius: 10%;
+}
+.floating-container h1 {
+    font-size: 5em;
 }
 
 .nav-container {
@@ -131,17 +133,19 @@ footer {
 .proficiency-block {
     padding-top: 15px;
 }
-/* TODO: add padding and formatting for main section titles */
 
-/* TODO: add hovering highlight in CSS for navbar and project cards */
+/* TODO: add hovering highlight in CSS project cards */
 
 @media screen and (max-width: 600px) {
     ul {
         padding: 0;
     }
-    .head-container{
+    .floating-container{
         top: 5%;
         left: 12%
+    }
+    .floating-container h1 {
+        font-size: 3em;
     }
     main {
         margin: 0 8px;
