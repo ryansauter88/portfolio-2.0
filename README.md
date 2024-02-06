@@ -16,8 +16,8 @@ This program is a web application, no installation needed.
 [Access the website by clicking here!](https://65c27e76ea2b7c000805429b--zippy-lollipop-6d9602.netlify.app/)
 
 ## Usage
-![](src\assets\readmeSS1.PNG)
-![](src\assets\readmeSS2.PNG)
+![](.\src\assets\readmeSS1.PNG)
+![](.\src\assets\readmeSS2.PNG)
 
 The website contains four pages, available by clicking on the different page names in the navigation bar. The homepage is a short biography section. The portfolio section contains project cards which, when hovered over, reveal the details of each project, as well as the repository link by clicking on the GitHub icons. The contact page holds a form with error messages if anything attempts to get submitted without all information. The resume section lists my proficiencies in Web Development, as well as a clickable link to download my resume. The footer contains icons with clickable links to my profiles on other important platforms.
 
