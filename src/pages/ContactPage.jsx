@@ -22,7 +22,7 @@ function ContactPage() {
             setErrorMessage('');
         }
         // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-        if (!validateEmail(email)) {
+        if (e.target.name == 'email' && !validateEmail(email)) {
             setConfirmMessage('');
           setErrorMessage('Email is invalid.');
           // We want to exit out of this code block if something is wrong so that the user can correct it
@@ -61,10 +61,18 @@ function ContactPage() {
           setErrorMessage(`Please fill in the message you'd like to send.`);
           return;
         }
+        if (!validateEmail(email)) {
+            setConfirmMessage('');
+          setErrorMessage('Email is invalid.');
+          // We want to exit out of this code block if something is wrong so that the user can correct it
+          return;
+        }
+
 
         // If successful, we want to clear out the input after registration.
         setMessage('');
         setEmail('');
+        setName('')
 
         // TODO: send an actual email using the form??
         setErrorMessage('')
@@ -75,7 +83,7 @@ function ContactPage() {
             <h1>Contact</h1>
             <form className="form" onSubmit={handleFormSubmit}>
                 <input
-                    onMouseLeave={handleHoverOff}
+                    onBlur={handleHoverOff}
                     className='contact-text'
                     value={name}
                     name="name"
@@ -84,7 +92,7 @@ function ContactPage() {
                     placeholder="name"
                 />
                 <input
-                    onMouseLeave={handleHoverOff}
+                    onBlur={handleHoverOff}
                     className='contact-text'
                     value={email}
                     name="email"
@@ -93,7 +101,7 @@ function ContactPage() {
                     placeholder="email"
                 />
                 <textarea
-                    onMouseLeave={handleHoverOff}
+                    onBlur={handleHoverOff}
                     id='contact-message'
                     value={message}
                     name="message"

@@ -112,6 +112,9 @@ footer {
     padding: 3% 5%;
     border-radius: 10px;
 }
+.nav-link:hover {
+    background-color: #8999D2;
+}
 
 .active {
     background-color: #8999D2;
@@ -123,7 +126,11 @@ footer {
     width: 128px;
     padding: 20px;
 }
-
+.icon:hover {
+    /* background-color: rgb(194, 202, 232, 0.6); */
+    /* border-radius: 8px; */
+    opacity: 0.4;
+}
 .proficiencies-container {
     padding-top: 30px;
     display: flex;
@@ -146,11 +153,17 @@ footer {
     margin: 20px 0;
     font-size: 1.3em;
 }
+.contact-text:hover {
+    background-color: #45F0DF;
+}
 
 #contact-message {
     height: 15vh;
     margin: 20px 0;
     font-size: 1.3em;
+}
+#contact-message:hover {
+    background-color: #45F0DF;
 }
 
 button {
@@ -158,13 +171,70 @@ button {
     width: 20%;
     font-size: 1.3em;
 }
+button:hover {
+    background-color: #45F0DF;
+}
 
 .error-text {
     color: rgb(161, 31, 31);
     font-size: 3em;
 }
 /* TODO: add hovering highlight in CSS project cards */
-
+.port-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.proj-card {
+    padding-top: 40px;
+    width: 25vw;
+    height: 25vh;
+}
+.proj-img {
+    position: absolute;
+    overflow: hidden;
+    width: 25vw;
+    height: 25vh;
+    /* opacity: 0.3; */
+}
+.card-float {
+    position: absolute;
+    opacity: 0;
+    width: 25vw;
+    height: 25vh;
+    background-color: rgb(69, 240, 223, 0.85);
+    /* background-color: rgb(0, 0, 0,0.5); */
+}
+.card-float:hover {
+    opacity: 1;
+}
+.card-float a {
+    text-decoration: none;
+    color: black;
+    display: inline;
+    padding-top: 2%;
+    padding-left: 6%;
+    opacity: 0.5;
+}
+.card-float a:hover {
+    opacity: 1;
+}
+.card-icon {
+    display: inline;
+    height: 56px;
+    width: 56px;
+    padding-top: 8%;
+    padding-left: 2%;
+    opacity: 0.5;
+}
+.card-icon:hover {
+    opacity: 1;
+}
+.card-float p {
+    padding-top: 2%;
+    padding-left: 6%;
+}
 @media screen and (max-width: 600px) {
     ul {
         padding: 0;
@@ -203,5 +273,24 @@ button {
     }
     button {
         width: 50%
+    }
+    .port-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .proj-card {
+        width: 75vw;
+    }
+    .proj-img {
+        width: 75vw;
+    }
+    .card-float {
+        width: 75vw;
+    }
+    .card-float a{
+        padding-left: 8%;
+    }
+    .card-float p {
+        padding-left: 8%;
     }
 }
