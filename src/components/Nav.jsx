@@ -1,24 +1,34 @@
 // Bringing in the required import from 'react-router-dom'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Navbar from './UI/Navbar';
 
 // TODO: add variable that gets passed to navbar and highlights the selected category
 
 function Nav() {
   // The Navbar UI component will render each of the Link elements in the links prop
+  const currentPage = useLocation().pathname;
+
   return (
     <Navbar
       links={[
-        <Link key={1} className="nav-link" to="/">
+        <Link key={1} to="/"
+        className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+        >
           About Me
         </Link>,
-        <Link key={2} className="nav-link" to="/portfolio">
+        <Link key={2} to="/portfolio"
+        className={currentPage === '/portfolio' ? 'nav-link active' : 'nav-link'}
+        >
           Portfolio
         </Link>,
-        <Link key={3} className="nav-link" to="/contact">
+        <Link key={3} to="/contact"
+        className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}
+        >
           Contact
         </Link>,
-        <Link key={4} className="nav-link" to="/resume">
+        <Link key={4} to="/resume"
+        className={currentPage === '/resume' ? 'nav-link active' : 'nav-link'}
+        >
           Resume
         </Link>,
       ]}

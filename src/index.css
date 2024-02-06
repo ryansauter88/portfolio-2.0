@@ -1,33 +1,70 @@
+@font-face {
+    font-family: m5x7;
+    src: url('./assets/m5x7.ttf');
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.75em;
+  }
+  h3 {
+    font-size: 2.5em;
+  }
+  h4 {
+    font-size: 2.0em;
+  }
+  h5 {
+    font-size: 1.5em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+
 * {
     /* border: 1px solid red; */
     margin: 0;
     text-wrap: wrap;
-    overflow: hidden;
+    font-family: m5x7;
 }
 
+/* TODO: figure out where best to put drop shadow for impact */
+
 body {
-    background-color: darkslategray;
+    background-color: #111D4A;
 }
 
 .header-container {
+    overflow: hidden;
     max-height: 500px;
 }
 
 a {
     text-decoration: none;
     color: black;
+    font-size: 2em;
+}
+
+p {
+    padding-top: 14px;
+    font-size: 1.5em;
 }
 
 main {
-    background-color: blue;
+    background-color: #8789C0;
     margin: 0 10.5%;
     padding: 40px 10%;
+    border-radius: 10px;
+
 }
 
 footer {
-    background-color: rebeccapurple;
+    background-color: #8380D6;
     margin: 0;
     padding: 25px;
+    border-radius: 10px 0 0 0;
+    text-align: center;
 }
 
 .webpage-title {
@@ -40,40 +77,63 @@ footer {
 }
 
 .head-container {
-    /* background-image: url('./assets/RecentPhoto.jpg'); */
-    /* padding: 10%; */
+    color: white;
     position: absolute;
     top: 15%;
-    left: 30%
+    left: 30%;
+    background-color: rgb(0, 0, 0, 0.4);
+    padding: 17px;
+    border-radius: 10%;
 }
 
 .nav-container {
     display: flex;
     justify-content: center;
     margin: 0 10px;
+    
 }
 
 .nav-list {
     display: flex;
     justify-content: space-around;
     width: 80%;
-    background-color: rgb(92, 38, 0);
+    background-color: #C2CAE8;
     padding: 0;
+    border-radius: 10px;
 }
 
 .nav-link {
     text-decoration: none;
-    margin: 0 10px;
-    background-color: rgb(92, 38, 0);
-    padding: 5%;
+    margin: 0 10px;    
+    background-color: #C2CAE8;
+    padding: 3% 5%;
+    border-radius: 10px;
 }
 
+.active {
+    background-color: #8999D2;
+    border: dotted 3px #45F0DF;
+}
 
+.icon {
+    height: 128px;
+    width: 128px;
+    padding: 20px;
+}
+
+.proficiencies-container {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.proficiency-block {
+    padding-top: 15px;
+}
 /* TODO: add padding and formatting for main section titles */
 
 /* TODO: add hovering highlight in CSS for navbar and project cards */
-
-/* TODO: general css for footer, getting images and links */
 
 @media screen and (max-width: 600px) {
     ul {
@@ -81,13 +141,10 @@ footer {
     }
     .head-container{
         top: 5%;
-        left: 20%
+        left: 12%
     }
     main {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        text-align: center;
+        margin: 0 8px;
     }
     .nav-list {
         flex-wrap: wrap;
@@ -98,8 +155,11 @@ footer {
     }
     .nav-link {
         padding: 10px 0;
-        width: 50%;
+        width: 48%;
         text-align: center;
         margin: 0;
+    }
+    .proficiencies-container {
+        flex-direction: column;
     }
 }

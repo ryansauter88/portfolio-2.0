@@ -3,7 +3,7 @@
 function Header() {
     return (
         <>
-            <img className="head-img" src="./src/assets/RecentPhoto.jpg"/>
+            <img className="head-img" src="./src/assets/RecentPhoto2.jpg"/>
             <div className="head-container">
                 <h1>Ryan Sauter</h1>
                 <p>Agile fullstack developer.</p>
