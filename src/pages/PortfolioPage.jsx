@@ -1,4 +1,3 @@
-// TODO: insert cards, make sure they fit nice
 import ProjectCard from '../components/ProjectCard'
 import projectData from '../utils/projectData';
 
