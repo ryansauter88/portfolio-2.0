@@ -1,8 +1,10 @@
+import Resume from '../assets/RyanSauterResume.pdf'
+
 function ResumePage() {
     return (
         <>
             <h1>Resume</h1>
-            <a href=".\src\assets\RyanSauterResume.docx">Download my resume here!</a>
+            <a href={Resume}>Download my resume here!</a>
             <div className="proficiencies-container">
                 <div className="proficiency-block">
                     <h3>Front-End Proficiencies</h3>
