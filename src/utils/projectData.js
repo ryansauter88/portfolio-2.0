@@ -3,29 +3,29 @@
 const projectData = [
     {
         projName: 'Weather Dashboard',
-        deployLink: 'https://redknight88.github.io/weather-dashboard/index.html',
-        repoLink: 'https://github.com/RedKnight88/weather-dashboard',
+        deployLink: 'https://ryansauter88.github.io/weather-dashboard/index.html',
+        repoLink: 'https://github.com/ryansauter88/weather-dashboard',
         // imgSrc: '../assets/weatherStock.jpg',
         techUsed: 'API, Bootstrap'
     },
     {
         projName: 'DemoSwap',
         deployLink: 'https://demo-swap-354ed4292240.herokuapp.com/',
-        repoLink: 'https://github.com/RedKnight88/demo-swap',
+        repoLink: 'https://github.com/ryansauter88/demo-swap',
         // imgSrc: '../assets/DemoSwap.png',
         techUsed: 'Sequelize, Server APIs'
     },
     {
         projName: 'Social Network API',
         deployLink: '',
-        repoLink: 'https://github.com/RedKnight88/social-network-API',
+        repoLink: 'https://github.com/ryansauter88/social-network-API',
         // imgSrc: '../assets/socialNetworkStock.jpg',
         techUsed: 'NoSQL, MongoDB'
     },
     {
         projName: 'E-Commerce Backend',
         deployLink: '',
-        repoLink: 'https://github.com/RedKnight88/e-commerce-backend',
+        repoLink: 'https://github.com/ryansauter88/e-commerce-backend',
         // imgSrc: '../assets/ecommerceStock.jpg',
         techUsed: 'MySQL, Sequelize'
     },
@@ -39,7 +39,7 @@ const projectData = [
     {
         projName: 'Note Taker',
         deployLink: 'https://note-taker-hj19.onrender.com/',
-        repoLink: 'https://github.com/RedKnight88/note-taker',
+        repoLink: 'https://github.com/ryansauter88/note-taker',
         // imgSrc: '../assets/noteTaker.png',
         techUsed: 'NodeJS, ExpressJS'
     },

@@ -66,6 +66,12 @@ footer {
     text-align: center;
 }
 
+.headshot {
+    display: inline;
+    width: 256px;
+    height: 256px;
+}
+
 .webpage-title {
     text-align: center;
 }
