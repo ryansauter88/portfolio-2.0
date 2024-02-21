@@ -2,6 +2,13 @@
 
 const projectData = [
     {
+        projName: 'REACTion',
+        deployLink: 'https://reaction-simulator.netlify.app/',
+        repoLink: 'https://github.com/hudsonpepper/REACTion',
+        // imgSrc: '../assets/noteTaker.png',
+        techUsed: 'ReactJS, Tailwind CSS'
+    },
+    {
         projName: 'Weather Dashboard',
         deployLink: 'https://ryansauter88.github.io/weather-dashboard/index.html',
         repoLink: 'https://github.com/ryansauter88/weather-dashboard',
@@ -36,13 +43,7 @@ const projectData = [
         // imgSrc: '../assets/screenshot3.jpg',
         techUsed: 'Foundation, CSS'
     },
-    {
-        projName: 'Note Taker',
-        deployLink: 'https://note-taker-hj19.onrender.com/',
-        repoLink: 'https://github.com/ryansauter88/note-taker',
-        // imgSrc: '../assets/noteTaker.png',
-        techUsed: 'NodeJS, ExpressJS'
-    },
+    
 ]
 
 export default projectData
