@@ -7,7 +7,14 @@ function ResumePage() {
             <a href={Resume}>Download my resume here!</a>
             <div className="proficiencies-container">
                 <div className="proficiency-block">
-                    <h3>Front-End Proficiencies</h3>
+                    <h3>Game Dev</h3>
+                    <p>C#</p>
+                    <p>GDScript</p>
+                    <p>Unity</p>
+                    <p>Godot</p>
+                </div>
+                <div className="proficiency-block">
+                    <h3>Web Front-End</h3>
                     <p>JavaScript</p>
                     <p>HTML</p>
                     <p>CSS</p>
@@ -18,7 +25,7 @@ function ResumePage() {
                     <p>APIs</p>
                 </div>
                 <div className="proficiency-block">
-                    <h3>Back-End Proficiencies</h3>
+                    <h3>Web Back-End</h3>
                     <p>NodeJS</p>
                     <p>ExpressJS</p>
                     <p>SQL</p>

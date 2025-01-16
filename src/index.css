@@ -4,7 +4,7 @@
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 3.5em;
   }
   h2 {
     font-size: 2.75em;
@@ -42,12 +42,12 @@ body {
 }
 
 a {
-    font-size: 2em;
+    font-size: 2.75em;
 }
 
 p {
     padding-top: 14px;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 main {
@@ -67,9 +67,14 @@ footer {
 }
 
 .headshot {
-    display: inline;
     width: 256px;
     height: 256px;
+}
+
+.image-container {
+    margin: 40px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .webpage-title {
@@ -98,14 +103,13 @@ footer {
     display: flex;
     justify-content: center;
     margin: 0 10px;
-    
 }
 
 .nav-list {
     display: flex;
     justify-content: space-around;
     width: 80%;
-    background-color: #C2CAE8;
+    background-color: #8999D2;
     padding: 0;
     border-radius: 10px;
 }
@@ -114,16 +118,17 @@ footer {
     text-decoration: none;
     margin: 0 10px;
     color: black;    
-    background-color: #C2CAE8;
+    background-color: #8999D2;
     padding: 3% 5%;
+    border: solid 3px #8999D2;
     border-radius: 10px;
 }
 .nav-link:hover {
-    background-color: #8999D2;
+    background-color: #C2CAE8;
 }
 
 .active {
-    background-color: #8999D2;
+    background-color: #C2CAE8;
     border: dotted 3px #45F0DF;
 }
 

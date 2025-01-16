@@ -7,7 +7,7 @@ function Header() {
             <img className="head-img" src={scenicwalkway}/>
             <div className="floating-container">
                 <h1>Ryan Sauter</h1>
-                <p>Agile full-stack developer.</p>
+                <p>Gameplay Programmer</p>
             </div>
         </>
     );
