@@ -13,7 +13,7 @@ A portfolio is essential for any programmer. It's especially essential when it t
 
 ## Installation
 This program is a web application, no installation needed.
-[Access the website by clicking here!](https://65c27e76ea2b7c000805429b--zippy-lollipop-6d9602.netlify.app/)
+[Access the website by clicking here!](https://main--zippy-lollipop-6d9602.netlify.app/)
 
 ## Usage
 ![](./src/assets/readmeSS1.PNG)
