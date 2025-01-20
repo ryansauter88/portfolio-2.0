@@ -12,6 +12,10 @@ function ResumePage() {
                     <p>GDScript</p>
                     <p>Unity</p>
                     <p>Godot</p>
+                    <h3>Misc.</h3>
+                    <p>C</p>
+                    <p>MATLAB</p>
+                    <p>Excel</p>
                 </div>
                 <div className="proficiency-block">
                     <h3>Web Front-End</h3>
