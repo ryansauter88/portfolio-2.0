@@ -12,6 +12,7 @@ import PortfolioPage from './pages/PortfolioPage';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
 import ResumePage from './pages/ResumePage';
+import ShowcasePage from './pages/ShowcasePage';
 
 const router = createBrowserRouter([
   // Define the accessible routes, and which components respond to which URL
@@ -35,7 +36,15 @@ const router = createBrowserRouter([
       {
         path: '/resume',
         element: <ResumePage />,
-      }
+      },
+      {
+        path: '/game1',
+        element: <ShowcasePage />,
+      },
+      {
+        path: '/game2',
+        element: <ShowcasePage />,
+      },
     ],
   },
 ]);
