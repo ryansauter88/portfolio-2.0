@@ -10,6 +10,7 @@ function AboutPage() {
                 <img className="headshot" src={HeaderImage}/>
                 <img className="headshot" src={HeaderImage2}/>
             </div>
+            <a href='/game1'>TEST TEST</a>
             <p>My name is Ryan Sauter, and I am an aspiring Gameplay Programmer.</p>
             <p>I am 25 years old. I am currently located in Philadelphia and open for work. I have a passion for esports, since 2017 I have been competed, run tournaments, created content, coached, and provided commentary for tournament streams. My spare time is spent running, reading, exploring the city with my lovely girlfriend, and tending to my tiny windowsill garden.</p>
             <p>I am open and actively looking for paid Game Development work. My expertise is within 2D projects, specifically programming in Unity and Godot with C#. I am also familiar with HTTP, Server-side, and database technologies. (I coded this website myself!)</p>
