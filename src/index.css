@@ -388,4 +388,20 @@ button:hover {
     .card-float p {
         padding-left: 8%;
     }
+    .show-first-box{
+        flex-direction: column-reverse;
+        padding: 2%;
+    }
+    .description-text{
+        width: 100%;
+    }
+    .iframe-container{
+        width: 100%;
+    }
+    .iframe-container iframe{
+        height: 240px;
+    }
+    .show-second-box{
+        padding: 40px 2%;
+    }
 }
