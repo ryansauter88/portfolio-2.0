@@ -3,7 +3,7 @@ const showcaseData = [
         showName: 'Divine Elevator',
         role: 'Project Lead, Programmer, Designer',
         youtubeLink: 'https://www.youtube.com/embed/a0VBftWjFos',
-        showDesc1: 'A 2-D roguelike with comic design and cosmic characters. Ea-nāṣir has been up to his old tricks, selling low grade copper to shoppers at the Babylon Bazaar! Now his irate customers are on a rampage, threatening to destroy the whole mall! The divine shopkeepers of Babylon Bazaar have called on you, Gilgamesh, to stop the angry mob.',
+        showDesc1: 'A 2-D beat-em up horde arcade game with comic design and cosmic characters. Ea-nāṣir has been up to his old tricks, selling low grade copper to shoppers at the Babylon Bazaar! Now his irate customers are on a rampage, threatening to destroy the whole mall! The divine shopkeepers of Babylon Bazaar have called on you, Gilgamesh, to stop the angry mob.',
         showDesc2: 'Divine Elevator was a project done for the Philly Game Mechanics August 2024 Game Jam, working with 4 other folks. This project was presented in the Game Developer Showcase at the PHL Gaming Conference in Philadelphia in September 2024. This game was built using Godot 4 and programmed in C#. For this jam, I focused on creating an item system, enemies with randomized sprites, and player combat. A lot of custom classes, custom resources, and a component model to creating game objects (all of which did not have many tutorials for C#) became my challenges which I overcame.'
     },
     {

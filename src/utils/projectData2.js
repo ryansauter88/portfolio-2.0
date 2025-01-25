@@ -13,18 +13,18 @@ const projectData2 = [
         repoLink: '',
         techUsed: 'Unity, C#'
     },
-    {
-        projName: 'Runaway Voltage',
-        deployLink: '/game3',
-        repoLink: '',
-        techUsed: 'Godot 4, C#'
-    },
-    {
-        projName: 'Palette Matrix',
-        deployLink: '/game4',
-        repoLink: '',
-        techUsed: 'Unity, C#'
-    },
+    // {
+    //     projName: 'Runaway Voltage',
+    //     deployLink: '/game3',
+    //     repoLink: '',
+    //     techUsed: 'Godot 4, C#'
+    // },
+    // {
+    //     projName: 'Palette Matrix',
+    //     deployLink: '/game4',
+    //     repoLink: '',
+    //     techUsed: 'Unity, C#'
+    // },
     
 ]
 

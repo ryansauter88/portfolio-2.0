@@ -23,11 +23,11 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <AboutPage />,
+        element: <PortfolioPage />,
     },
     {
-        path: '/portfolio',
-        element: <PortfolioPage />,
+        path: '/about',
+        element: <AboutPage />,
       },
       {
         path: '/contact',

@@ -29,20 +29,20 @@ const projectData = [
         // imgSrc: '../assets/socialNetworkStock.jpg',
         techUsed: 'NoSQL, MongoDB'
     },
-    {
-        projName: 'E-Commerce Backend',
-        deployLink: '',
-        repoLink: 'https://github.com/ryansauter88/e-commerce-backend',
-        // imgSrc: '../assets/ecommerceStock.jpg',
-        techUsed: 'MySQL, Sequelize'
-    },
-    {
-        projName: 'Your Nutrition Radar',
-        deployLink: 'https://mykhailozakh.github.io/Your-Nutrition-Radar/',
-        repoLink: 'https://github.com/MykhailoZakh/Your-Nutrition-Radar',
-        // imgSrc: '../assets/screenshot3.jpg',
-        techUsed: 'Foundation, CSS'
-    },
+    // {
+    //     projName: 'E-Commerce Backend',
+    //     deployLink: '',
+    //     repoLink: 'https://github.com/ryansauter88/e-commerce-backend',
+    //     imgSrc: '../assets/ecommerceStock.jpg',
+    //     techUsed: 'MySQL, Sequelize'
+    // },
+    // {
+    //     projName: 'Your Nutrition Radar',
+    //     deployLink: 'https://mykhailozakh.github.io/Your-Nutrition-Radar/',
+    //     repoLink: 'https://github.com/MykhailoZakh/Your-Nutrition-Radar',
+    //     imgSrc: '../assets/screenshot3.jpg',
+    //     techUsed: 'Foundation, CSS'
+    // },
     
 ]
 

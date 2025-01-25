@@ -37,6 +37,7 @@ function ResumePage() {
                     <p>NoSQL</p>
                     <p>MongoDB / Mongoose</p>
                     <p>RESTful CRUD APIs</p>
+                    <p>Python</p>
                 </div>
             </div>
         </>

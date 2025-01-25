@@ -12,12 +12,12 @@ function Nav() {
         <Link key={1} to="/"
         className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
         >
-          About Me
-        </Link>,
-        <Link key={2} to="/portfolio"
-        className={currentPage === '/portfolio' ? 'nav-link active' : 'nav-link'}
-        >
           Portfolio
+        </Link>,
+        <Link key={2} to="/about"
+        className={currentPage === '/about' ? 'nav-link active' : 'nav-link'}
+        >
+          About Me
         </Link>,
         <Link key={3} to="/contact"
         className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}
