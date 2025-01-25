@@ -81,7 +81,7 @@ function ContactPage() {
     return (
         <>
             <h1>Contact</h1>
-            <form className="form" onSubmit={handleFormSubmit} netlify="">
+            <form name='contact' className="form" onSubmit={handleFormSubmit} data-netlify="true">
                 <input
                     onBlur={handleHoverOff}
                     className='contact-text'
