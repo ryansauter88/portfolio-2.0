@@ -81,7 +81,7 @@ function ContactPage() {
     return (
         <>
             <h1>Contact</h1>
-            <h3>This page is not currently operating, please send an email to ryansauter88@gmail.com.</h3>
+            {/* <h3>This page is not currently operating, please send an email to ryansauter88@gmail.com.</h3> */}
             <form name='contact' className="form" onSubmit={handleFormSubmit} data-netlify="true" method='post'>
                 <input type="hidden" name="form-name" value="contact" />
                 <input

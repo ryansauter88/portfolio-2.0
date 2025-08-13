@@ -27,13 +27,13 @@ function PortfolioPage() {
     return (
         <>
             <h1>Portfolio</h1>
-                <h3>Game Projects</h3>
-            <div className="port-container">
-                {projectData2.map(makeCard2)}
-            </div>
-                <h3>Website Projects</h3>
+            <h3>Website Projects</h3>
             <div className="port-container">
                 {projectData.map(makeCard)}
+            </div>
+            <h3>Game Projects</h3>
+            <div className="port-container">
+                {projectData2.map(makeCard2)}
             </div>
         </>
     );

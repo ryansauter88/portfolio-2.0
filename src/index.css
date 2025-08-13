@@ -119,8 +119,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../src/assets/l1_level1bg_1.png");
-    background-size: cover;
+    background-image: url("../src/assets/rainbowSplashBackground.jpg");
+    background-size:cover;
     background-position-y: -240px;
     background-attachment: fixed;
 }
@@ -252,6 +252,11 @@ button:hover {
     width: 25vw;
     height: 25vh;
     border: black 4px solid;
+    transition: opacity 1s, translate 0.4s ease-out;
+    @starting-style {
+    opacity: 0;
+    translate: 0px 30px;
+  }
 }
 .proj-img {
     position: absolute;

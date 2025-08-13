@@ -7,7 +7,7 @@ function Header() {
             <div className="head-img">
                 <div className="floating-container">
                     <h1>Ryan Sauter</h1>
-                    <p>Gameplay Programmer</p>
+                    <p>Web Developer</p>
                 </div>
             </div>
         </>
